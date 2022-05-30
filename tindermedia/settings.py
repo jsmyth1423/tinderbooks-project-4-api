@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 if ENV == 'DEV':
     SECRET_KEY = '!#m^ui3*1x47v&*2iughr$j+$yijh$$i(^bnk!s1x0i2d*&e7t'
 else:
-    ENV = str(os.getenv('ENVIRONMENT', 'DEV'))
+    SECRET_KEY = str(os.getenv('SECRET_KEY'))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = ENV == 'DEV'
 
