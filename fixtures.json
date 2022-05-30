@@ -1,0 +1,51 @@
+[
+  {
+    "model": "games.developer",
+    "pk": 1,
+    "fields": {
+      "name": "Riot Games"
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": 1,
+    "fields": {
+      "name": "Tactical FPS"
+    }
+  },
+  {
+    "model": "games.genre",
+    "pk": 2,
+    "fields": {
+      "name": "MOBA"
+    }
+  },
+  {
+    "model": "games.game",
+    "pk": 1,
+    "fields": {
+      "name": "Valorant",
+      "developer": 1,
+      "image": "https://cdn.vox-cdn.com/thumbor/iaRO8ZRmYP7vNgG5yPiBME1G1Wg=/0x0:3011x1447/1200x675/filters:focal(1123x329:1603x809)/cdn.vox-cdn.com/uploads/chorus_image/image/66954486/VALORANT_Jett_Red_crop.0.jpg",
+      "description": "VALORANT is a competitive tactical shooter from the first-person perspective. It takes place on a near-future Earth and features a cast of characters known as agents, each of which have their own unique set of abilities to create tactical opportunities in a 5v5 team environmenent.",
+      "release_date": "2022-04-14",
+      "genres": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "games.game",
+    "pk": 2,
+    "fields": {
+      "name": "League of Legends",
+      "developer": 1,
+      "image": "https://www.leagueoflegends.com/static/open-graph-2e582ae9fae8b0b396ca46ff21fd47a8.jpg",
+      "description": "In the game, two teams of five players battle in player versus player combat, each team occupying and defending their half of the map. Each of the ten players controls a character, known as a \"champion\", with unique abilities and differing styles of play. A team wins by pushing through to the enemy",
+      "release_date": "2022-04-14",
+      "genres": [
+        2
+      ]
+    }
+  }
+]

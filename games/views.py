@@ -3,7 +3,6 @@ from rest_framework.generics import ListCreateAPIView, RetrieveAPIView
 from rest_framework.request import Request
 from .models import *
 from .serializers.common import *
-import random
 
 # Create your views here.
 

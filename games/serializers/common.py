@@ -1,4 +1,6 @@
 from rest_framework import serializers
+
+from jwt_auth.serializers import UserSerializer
 from ..models import *
 
 
@@ -26,6 +28,7 @@ class GenreSerializer(serializers.ModelSerializer):
 class PopulatedGameSerializer(GameSerializer):
     developer = DeveloperSerializer()
     genres = GenreSerializer(many=True)
+    SwipedBy = UserSerializer(many=True)
 
 
 class GameWithGenresSerializer(GameSerializer):
